@@ -1,0 +1,40 @@
+*		{ margin: 0; padding: 0; transition: all 0.5s; }
+
+html	{ margin: 0; padding: 0;}
+body 	{ background: #f5f5f5; margin: 200px auto; width: 200px; }
+
+div		{ border-radius: 200px; border: 10px solid #000; }
+
+@keyframes circle {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(360deg); }
+}
+
+@keyframes inner-circle {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(-360deg); }
+}
+
+@keyframes centre-circle {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(-360deg); }
+}
+
+body > div {
+    margin: 20px auto 0;
+    line-height:1;
+   	animation: circle 5s linear infinite;
+    transform-origin:50% 200px;
+    background: #fff;
+}
+
+div > div {
+    animation: inner-circle 5s linear infinite;
+    background: #ccc;
+}
+
+.center {
+    animation: centre-circle 5s linear infinite;
+    transform-origin: 62% 62%;
+    background: #fff;
+}
