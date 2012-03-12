@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../font/fontawesome-webfont.eot');
+    src: url('../font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'), url('../font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html				{ background: #505050; box-shadow: inset 0 0 30px rgba(0,0,0,0.5); font-family: FontAwesome, serif; margin: 0; padding: 50px 0; }
+body				{ color: #111; margin: 0; padding: 0; }
+
+#container			{ margin: 100px auto; padding: 0; text-align: center; width: 30%; }
+span					{ background-color: #6daa01; background-repeat: repeat-x; background-image: linear-gradient(to bottom, #8fcf00, #6daa01); border-radius: 20px; box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.5); color: #4d6d00; display: inline-block; line-height: 30px; height: 30px; text-align: center; text-shadow: 0 1px 0 rgba(255,255,255,0.5); width: 30px;}
+span	:before			{ display: inline;}
+span:hover			{ background-position: 0 -10px;}
+.icon-envelope:before           { content: "\f003"; }
+.icon-heart:before              { content: "\f004"; }
+.icon-star:before               { content: "\f005"; }
